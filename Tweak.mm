@@ -12,15 +12,13 @@
 
 - (void)viewDidLoad {
 	%orig;
-  UIBarButtonItem *switcherButton =
-    [[UIBarButtonItem alloc]
-      initWithImage:[UIImage imageNamed:@"/Library/Application Support/StoreSwitcher/switcher"]
-      style:UIBarButtonItemStylePlain
-      target:self
-      action:@selector(openSwitcher:)
-    ];
+    UIBarButtonItem *switcherButton = [[UIBarButtonItem alloc]
+        initWithTitle:@"切换"
+        style:UIBarButtonItemStylePlain
+        target:self
+        action:@selector(openSwitcher:)];
 
-  [self navigationItem].leftBarButtonItems = @[[self navigationItem].leftBarButtonItem, switcherButton];
+    [(UIViewController *)self navigationItem].leftBarButtonItem = switcherButton;
 }
 
 %new
