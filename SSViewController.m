@@ -17,7 +17,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  [[self tableViewController] setTitle:@"Accounts"];
+  [[self tableViewController] setTitle:@"帐户"];
   UIBarButtonItem *dismissButton =
     [[UIBarButtonItem alloc]
       initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
@@ -177,7 +177,7 @@
   };
   NSString *countryCode = countryDict[internalCountryCode];
   if (!countryCode) {
-    countryCode = [NSString stringWithFormat: @"Unknown Country [%@]", internalCountryCode];
+    countryCode = [NSString stringWithFormat: @"未知国家 [%@]", internalCountryCode];
   }
   return countryCode;
 }

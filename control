@@ -1,9 +1,11 @@
-Package: com.subdiox.storeswitcher2
-Name: StoreSwitcher 2
+Package: com.dao.storeswitcher2
+Name: StoreSwitcher2(rootless)
 Depends: firmware (>= 11), mobilesubstrate
-Version: 1.0.1
 Architecture: iphoneos-arm
-Description: Adds a button to switch account in App Store account page on iOS 11+.
+Description: 点击AppStore帐户页面左上角图标快速切换账号。
 Maintainer: subdiox
 Author: subdiox
-Section: Tweaks
+Section: 嗨-工具
+Version: 1.0.5
+Conflicts: com.lenglengyu.storeswitcher2-rootless, com.yourepo.0xkuj.storeswitcher2rootless, com.hk.storeswitcher2.rl, com.qms.storeswitcher
+
